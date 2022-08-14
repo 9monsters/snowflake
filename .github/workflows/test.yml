@@ -20,5 +20,5 @@ jobs:
         run: test -z "`golint ./...`"
       - name: go test
         run: go test -v ./...
-      - name: Build example
-        run: cd example && ./linux64_build.sh
+      - name: Build examples
+        run: cd examples && ./linux64_build.sh
